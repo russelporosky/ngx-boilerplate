@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "at-rule-no-vendor-prefix": true,
+    "declaration-no-important": true,
+    "indentation": "tab",
+    "max-empty-lines": 1,
+    "max-line-length": 80,
+    "max-nesting-depth": 3,
+    "property-no-vendor-prefix": true,
+    "scss/at-rule-no-unknown": true,
+    "selector-attribute-quotes": "always",
+    "selector-max-compound-selectors": 5,
+    "selector-max-specificity": "0,4,2",
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": [
+          "ng-deep"
+        ]
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": [
+          "/^app-/"
+        ]
+      }
+    ],
+    "value-keyword-case": "lower",
+    "value-no-vendor-prefix": true
+  }
+}

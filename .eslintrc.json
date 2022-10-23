@@ -1,0 +1,161 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "settings": {
+        "import/resolver": {
+          "typescript": {}
+        }
+      },
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "prettier"
+      ],
+      "rules": {
+        "@typescript-eslint/array-type": "error",
+        "@typescript-eslint/consistent-type-assertions": "error",
+        "@typescript-eslint/default-param-last": "error",
+        "@typescript-eslint/lines-between-class-members": [
+          "error",
+          "always",
+          {
+            "exceptAfterSingleLine": true
+          }
+        ],
+        "@typescript-eslint/no-array-constructor": [
+          "error"
+        ],
+        "@typescript-eslint/no-empty-function": "error",
+        "@typescript-eslint/no-magic-numbers": [
+          "warn",
+          {
+            "ignoreArrayIndexes": true,
+            "ignoreEnums": true
+          }
+        ],
+        "@typescript-eslint/no-shadow": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/unbound-method": [
+          "error",
+          {
+            "ignoreStatic": true
+          }
+        ],
+        "import/no-extraneous-dependencies": "error",
+        "accessor-pairs": "error",
+        "array-callback-return": "error",
+        "arrow-body-style": [
+          "error",
+          "as-needed"
+        ],
+        "block-scoped-var": "error",
+        "camelcase": "warn",
+        "comma-dangle": "off",
+        "complexity": [
+          "warn",
+          12
+        ],
+        "consistent-return": "error",
+        "default-case-last": "error",
+        "default-param-last": "off",
+        "grouped-accessor-pairs": "warn",
+        "guard-for-in": "error",
+        "lines-between-class-members": "off",
+        "max-len": "off",
+        "no-alert": "warn",
+        "no-array-constructor": "off",
+        "no-console": [
+          "warn",
+          {
+            "allow": [
+              "warn",
+              "error"
+            ]
+          }
+        ],
+        "no-duplicate-imports": "error",
+        "no-else-return": "error",
+        "no-empty-function": "off",
+        "no-lone-blocks": "error",
+        "no-lonely-if": "error",
+        "no-loop-func": "error",
+        "no-magic-numbers": "off",
+        "no-negated-condition": "error",
+        "no-param-reassign": "error",
+        "no-promise-executor-return": "error",
+        "no-restricted-syntax": [
+          "error",
+          "SequenceExpression"
+        ],
+        "no-sequences": "off",
+        "no-tabs": [
+          "error",
+          {
+            "allowIndentationTabs": true
+          }
+        ],
+        "no-template-curly-in-string": "error",
+        "no-throw-literal": "error",
+        "no-unmodified-loop-condition": "warn",
+        "no-unneeded-ternary": "warn",
+        "no-unreachable-loop": "error",
+        "no-unsafe-optional-chaining": "error",
+        "no-unused-expressions": "error",
+        "no-useless-computed-key": "error",
+        "no-useless-constructor": "off",
+        "no-useless-rename": "error",
+        "no-useless-return": "error",
+        "no-var": "error",
+        "object-shorthand": "warn",
+        "one-var": [
+          "error",
+          "never"
+        ],
+        "padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "next": "return",
+            "prev": "*"
+          }
+        ],
+        "prefer-arrow-callback": "error",
+        "prefer-const": "warn",
+        "prefer-destructuring": "warn",
+        "prefer-object-spread": "error",
+        "prefer-promise-reject-errors": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "prefer-template": "error",
+        "quotes": "off",
+        "radix": "error",
+        "require-atomic-updates": "error"
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
