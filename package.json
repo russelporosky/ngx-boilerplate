@@ -1,6 +1,6 @@
 {
   "name": "ngx-boilerplate",
-  "version": "14.2.0",
+  "version": "14.2.1",
   "scripts": {
     "build": "npm run config:prod && ng build",
     "config": "ts-node scripts/setenv.ts",
