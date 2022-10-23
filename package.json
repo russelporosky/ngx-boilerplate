@@ -2,15 +2,18 @@
   "name": "ngx-boilerplate",
   "version": "14.2.0",
   "scripts": {
-    "build": "ng build",
+    "build": "npm run config:prod && ng build",
+    "config": "ts-node scripts/setenv.ts",
+    "config:dev": "npm run config -- --configuration development",
+    "config:prod": "npm run config -- --configuration production",
     "lint": "npm run lint:css && npm run lint:browser",
-    "lint:browser": "ng lint",
+    "lint:browser": "npm run config:dev && ng lint",
     "lint:css": "stylelint ./projects/**/*.scss",
     "ng": "ng",
-    "prettier": "prettier --write \"projects/**/*.{scss,ts,html}\"",
-    "start": "ng serve",
-    "test": "ng test",
-    "watch": "ng build --watch --configuration development"
+    "prettier": "npm run config:dev && prettier --write \"projects/**/*.{scss,ts,html}\"",
+    "start": "npm run config:dev && ng serve",
+    "test": "npm run config:dev && ng test",
+    "watch": "npm run config:dev && ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +41,7 @@
     "@types/jasmine": "~4.0.0",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
+    "dotenv": "^16.0.3",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.2",
@@ -53,6 +57,8 @@
     "stylelint-config-recommended-scss": "^7.0.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-scss": "^4.3.0",
-    "typescript": "~4.7.2"
+    "ts-node": "^10.9.1",
+    "typescript": "~4.7.2",
+    "yargs": "^17.6.0"
   }
 }
