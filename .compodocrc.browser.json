@@ -1,0 +1,7 @@
+{
+  "customFavicon": "./projects/browser/src/favicon.ico",
+  "includes": "./",
+  "output": "./documentation/browser",
+  "theme": "readthedocs",
+  "tsconfig": "./projects/browser/tsconfig.doc.browser.json"
+}
