@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-boilerplate documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/readthedocs.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-boilerplate documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content additional-page">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 id="opinions">Opinions</h1>
+<p>I&#39;ve made this boilerplate to suit my preferences. Most of the additions and changes are fine with most people, but there are a few that have generated a number of discussions in the past.</p>
+<p>The decisions below (along with some others that I don&#39;t think require explanation) are done with a view for developer convenience, long-term maintainability, and readability.</p>
+<h3 id="indentation-tabs">Indentation: tabs</h3>
+<p>This is an accessibility choice. Using tabs for indentation allows the developer to control how much indentation is shown in their editor. As I get older and my eyesight slowly gets worse, I prefer to use a four space indent. I realize that you may prefer a two space indent. Using tabs allows both of us to have our way.</p>
+<p>The <code>.editorconfig</code> file does not specify the number of spaces a tab character will appear as, so your IDE default should take effect.</p>
+<p><em>NOTE:</em> JSON files will still use two space characters for indentation. This is so that the Angular CLI and other schematics that modify the <code>package.json</code> or <code>angular.json</code> files do so in a visually pleasing way.</p>
+<h3 id="line-length-80">Line length: 80</h3>
+<p>Related to accessibility again. Reading long lines of code is generally much more difficult than reading shorter ones, and lines can almost always be split into multiple lines or even multiple statements for better readability.</p>
+<p>This is a soft limit - Prettier will allow lines longer than 80 characters under some circumstances, and a maximum length is not enforced by ESLint.</p>
+<h3 id="semicolons-always">Semicolons: always</h3>
+<p>Primarily for readability and making it really obvious that a statement has been completed.</p>
+<p>The secondary purpose is philosophical - there are times that a semicolon must be used, and instead of having to remember those exceptions, I choose to have the same rule apply everywhere.</p>
+<h3 id="trailing-comma-always">Trailing comma: always</h3>
+<p>This avoids repository diffs that change nothing but adding that comma so a new element can be added to an object or array. Highlighting that line forces me to double-check that nothing else has changed, which is a waste of time.</p>
+<h3 id="quotes-single">Quotes: single</h3>
+<p>Why hit an extra key every time you need a quotation mark? I&#39;ve somewhat hypocritically kept the double-quotes in HTML and CSS for compatibility reasons that are probably out of date at this point, so I&#39;ll need to revisit this for the next version.</p>
+<h3 id="lambda-parentheses-always">Lambda parentheses: always</h3>
+<p>During maintenance and refactoring, having to add the parentheses when an arrow method signature changes is annoying and easy to miss when initially typing in the change, causing those damning red squiggly lines to appear everywhere. This chews up mental parsing resources and CPU resources and is very easy to avoid.</p>
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
+            var COMPODOC_CURRENT_PAGE_URL = 'opinions.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

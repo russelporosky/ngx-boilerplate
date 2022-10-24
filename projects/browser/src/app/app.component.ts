@@ -1,5 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+/**
+ * This is the bootstrap component for the application.
+ */
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -7,5 +10,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
+	/**
+	 * The title of the application.
+	 */
 	title = 'browser';
 }
