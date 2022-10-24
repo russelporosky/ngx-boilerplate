@@ -68,6 +68,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Continuous integration
+
+An `npm run test:ci` exists that runs tests a single time and uses a headless browser. This is used by the GitHub workflow for linting and testing the project.
+
+Since the environment can't be built without a `.env` file in the environment folder, the workflow simply copies `.env.example` to `projects/browser/src/environments/.env` to allow the build process to succeed. If your tests rely on specific environment values, you'll need to create repository secrets through GitHub that contains those values (which keeps things like API keys out of the repository itself), *or* put default values into the `.env.example` file, with the understanding that those values will become part of the repository once you commit that change.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

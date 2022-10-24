@@ -1,6 +1,6 @@
 {
   "name": "ngx-boilerplate",
-  "version": "14.2.2",
+  "version": "14.2.3",
   "scripts": {
     "build": "npm run config:prod && ng build",
     "config": "ts-node ./scripts/setenv.ts",
@@ -16,6 +16,7 @@
     "prettier": "npm run config:dev && prettier --write \"projects/**/*.{scss,ts,html}\"",
     "start": "npm run config:dev && ng serve",
     "test": "npm run config:dev && ng test",
+    "test:ci": "npm run config:dev && ng test --browsers ChromeHeadless --watch false",
     "watch": "npm run config:dev && ng build --watch --configuration development"
   },
   "private": true,
