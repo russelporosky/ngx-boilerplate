@@ -3,5 +3,6 @@
   "includes": "./",
   "output": "./documentation/browser",
   "theme": "readthedocs",
-  "tsconfig": "./projects/browser/tsconfig.doc.browser.json"
+  "tsconfig": "./projects/browser/tsconfig.doc.browser.json",
+  "unitTestCoverage": "./projects/browser/coverage-summary.json"
 }

@@ -58,19 +58,13 @@ The schematics will currently create TypeScript files with spaces for indentatio
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run `npn run test` to execute the unit tests via [Karma](https://karma-runner.github.io). Run `npm run test:coverage` to create an updated coverage report that can be display in the generated documentation (you'll need to build the documentation in order to see the changes).
 
 ## Continuous integration
-
-An `npm run test:ci` exists that runs tests a single time and uses a headless browser. This is used by the GitHub workflow for linting and testing the project.
 
 Since the environment can't be built without a `.env` file in the environment folder, the workflow simply copies `.env.example` to `projects/browser/src/environments/.env` to allow the build process to succeed. If your tests rely on specific environment values, you'll need to create repository secrets through GitHub that contains those values (which keeps things like API keys out of the repository itself), *or* put default values into the `.env.example` file, with the understanding that those values will become part of the repository once you commit that change.
 

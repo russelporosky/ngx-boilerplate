@@ -29,7 +29,7 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content package-properties">
+               <div class="content unit-test">
                    <div class="content-data">
 
 
@@ -47,17 +47,40 @@
 
 
 
-    <ol class="breadcrumb">
-        <li>Properties</li>
-    </ol>
-    <ul class="properties-list">
-        <li>
-            <b>Version</b> : 14.2.3</li>
-    </ul>
 
 
 
 
+<ol class="breadcrumb">
+  <li>Unit test coverage</li>
+</ol>
+
+<div>
+    <img src="./images/coverage-badge-statements.svg">
+    <img src="./images/coverage-badge-branches.svg">
+    <img src="./images/coverage-badge-functions.svg">
+    <img src="./images/coverage-badge-lines.svg">
+</div>
+
+<table class="table table-bordered coverage" id="coverage-table">
+    <thead class="coverage-header">
+        <tr>
+            <th>File</th>
+            <th style="text-align:right" class="statements" data-sort-default>Statements</th>
+            <th style="text-align:right" class="statements" data-sort-default>Branches</th>
+            <th style="text-align:right" class="statements" data-sort-default>Functions</th>
+            <th style="text-align:right" class="statements" data-sort-default>Lines</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="js/libs/tablesort.min.js"></script>
+<script src="js/libs/tablesort.number.min.js"></script>
+<script>
+    new Tablesort(document.getElementById('coverage-table'));
+</script>
 
                    </div><div class="search-results">
     <div class="has-results">
@@ -84,8 +107,8 @@
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 0;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'package-properties';
-            var COMPODOC_CURRENT_PAGE_URL = 'properties.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'unit-test';
+            var COMPODOC_CURRENT_PAGE_URL = 'unit-test.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
