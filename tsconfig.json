@@ -9,10 +9,10 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "lib": [
-      "es2020",
+      "ES2022",
       "dom"
     ],
-    "module": "es2020",
+    "module": "ES2022",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -25,7 +25,8 @@
     },
     "sourceMap": true,
     "strict": true,
-    "target": "es2020"
+    "target": "ES2022",
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

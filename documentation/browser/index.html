@@ -60,11 +60,9 @@ APP_TITLE=My Awesome App</code></pre></div><p>Will become:</p>
 <p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
 <p>The schematics will currently create TypeScript files with spaces for indentation instead of tabs, and without trailing commas. Please run Prettier before committing the new or modified files.</p>
 <h2 id="build">Build</h2>
-<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
+<p>Run <code>npm run build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
 <h2 id="running-unit-tests">Running unit tests</h2>
-<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
-<h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
-<p>Run <code>ng e2e</code> to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.</p>
+<p>Run <code>npn run test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>. Run <code>npm run test:coverage</code> to create an updated coverage report that can be display in the generated documentation (you&#39;ll need to build the documentation in order to see the changes).</p>
 <h2 id="continuous-integration">Continuous integration</h2>
 <p>Since the environment can&#39;t be built without a <code>.env</code> file in the environment folder, the workflow simply copies <code>.env.example</code> to <code>projects/browser/src/environments/.env</code> to allow the build process to succeed. If your tests rely on specific environment values, you&#39;ll need to create repository secrets through GitHub that contains those values (which keeps things like API keys out of the repository itself), <em>or</em> put default values into the <code>.env.example</code> file, with the understanding that those values will become part of the repository once you commit that change.</p>
 <h2 id="further-help">Further help</h2>

@@ -79,7 +79,13 @@ import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
 const routes: Routes &#x3D; [];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, {
+		anchorScrolling: &#x27;enabled&#x27;,
+		initialNavigation: &#x27;enabledBlocking&#x27;,
+		onSameUrlNavigation: &#x27;reload&#x27;,
+		scrollPositionRestoration: &#x27;enabled&#x27;,
+		urlUpdateStrategy: &#x27;eager&#x27;,
+	})],
 	exports: [RouterModule],
 })
 export class AppRoutingModule {}
